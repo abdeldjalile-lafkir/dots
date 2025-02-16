@@ -1,0 +1,88 @@
+* {
+    font: "Figtree 13";
+}
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: " ";
+}
+
+window {
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgba(29, 31, 33, 0.95);
+    border: 2px solid;
+    border-color: #4D80E4;
+    padding: 12px;
+}
+
+mainbox {
+    spacing: 10px;
+    margin: 0;
+    padding: 8px;
+    children: ["inputbar", "listview", "message"];
+}
+
+
+inputbar {
+    children: ["entry"];
+    spacing: 10px;
+    margin: 10px;
+}
+
+message {
+    background-color: red;
+    border: 0px solid;
+}
+
+listview {
+    columns: 1;
+    lines: 10;
+    fixed-height: true;
+    fixed-columns: true;
+    cycle: false;
+    scrollbar: false;
+    border: 0px solid;
+}
+
+entry {
+    placeholder: "Search Apps";
+    text-color: #FFFFFFFF;
+    placeholder-color: #888888FF;
+    font-size: 20px;
+}
+
+
+
+element {
+    spacing: 10px;
+    margin: 1px;
+    padding: 12px;
+    border: 0px solid;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: #FFFFFFFF;
+}
+
+element-icon {
+  size: 3%;
+}
+
+element normal.normal , element alternate.normal{
+    background-color: transparent;
+    text-color: #FFFFFFFF;
+}
+
+element selected.active {
+    background-color: #4d80e4;
+    text-color: #FFFFFFFF;
+}
+
+element selected.normal {
+    background-color: #4d80e4;
+    text-color: #FFFFFFFF;
+}
+
+

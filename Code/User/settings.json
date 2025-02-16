@@ -1,0 +1,74 @@
+{
+    "window.customMenuBarAltFocus": false,
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "symbols",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 26,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.showTabs": "single",
+    "editor.guides.bracketPairs": "active",
+    "database-client.autoSync": true,
+    "explorer.compactFolders": false,
+    "workbench.tree.indent": 10,
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke":"#4D80E4",
+        "tree.inactiveIndentGuidesStroke":"#5B5B5B",
+    },
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    
+    "explorer.confirmDelete": false,
+    "editor.stickyScroll.enabled": false,
+    "explorer.confirmPasteNative": false,
+    "window.menuBarVisibility": "hidden",
+    "terminal.integrated.cursorStyle": "underline",
+    "editor.cursorBlinking": "expand",
+    "terminal.integrated.cursorBlinking": true,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "window.customTitleBarVisibility": "never",
+    "window.titleBarStyle": "native",
+    "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": true,
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.view.pdf.viewer": "tab", 
+    "latex-workshop.latex.outDir": "build",
+    "latex-workshop.latex.autoBuild.run": "onSave", 
+    "latex-workshop.message.error.show": true, 
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.tools": [
+          {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-output-directory=./build",
+              "%DOC%"
+            ]
+          }
+    ],
+    "latex-workshop.latex.recipes": [
+          {
+            "name": "XeLaTeX",
+            "tools": ["xelatex"]
+          }
+    ],
+    "workbench.editorAssociations": {
+      "*.pdf":"latex-workshop-pdf-hook"
+    },
+
+    "vscode_custom_css.imports": [
+        "file:///home/jalil-lafkir/.config/vscode-costume-settings/Style.css",
+    ],
+    "workbench.activityBar.location": "hidden",
+    
+      
+}

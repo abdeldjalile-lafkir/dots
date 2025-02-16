@@ -1,0 +1,9 @@
+
+# ~/.config/wofi/config
+width=800
+height=300
+border=2
+location=center
+columns=1
+lines=10
+show-icons=true
