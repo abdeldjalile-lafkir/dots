@@ -1,0 +1,54 @@
+[global]
+
+    monitor = 0
+    follow = mouse
+    timeout = 5
+
+    origin = top-center
+    width = 500
+    notification_height = 100
+    padding = 20
+    horizontal_padding = 20
+    separator_height = 20
+    corner_radius = 10
+    transparency = 100
+    offset = 0x10 
+
+    frame_width = 2
+    frame_color = "#4D80E4"
+    separator_color = "frame"
+
+    font = JetBrains Mono Nerd Font
+    format = "<b><span color='#4D80E4'>%s</span></b>\n%b"
+    line_height = 0
+    markup = full
+    ignore_newline = no
+    ellipsize = start
+
+
+    icon_path = /home/jalil-lafkir/.config/dunst/
+    icon_position = left
+    max_icon_size = 32
+
+
+    stack_duplicates = true
+    show_indicators = yes
+
+
+[shortcuts]
+    close = ctrl+space
+
+[urgency_low]
+    frame_color = "#4D80E4"
+    foreground = "#FFFFFF"
+    background = "#5B5B5B"
+
+[urgency_normal]
+    frame_color = "#4D80E4"
+    foreground = "#FFFFFF"
+    background = "#1D2021"
+
+[urgency_critical]
+    frame_color = "#4D80E4"
+    foreground = "#FFFFFF"
+    background = "#1D2021"

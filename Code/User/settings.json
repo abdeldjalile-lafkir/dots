@@ -29,7 +29,7 @@
     "editor.stickyScroll.enabled": false,
     "explorer.confirmPasteNative": false,
     "window.menuBarVisibility": "hidden",
-    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorStyle": "line",
     "editor.cursorBlinking": "expand",
     "terminal.integrated.cursorBlinking": true,
     "window.commandCenter": false,
