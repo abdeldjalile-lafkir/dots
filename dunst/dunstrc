@@ -9,17 +9,17 @@
     notification_height = 100
     padding = 20
     horizontal_padding = 20
-    separator_height = 20
+    separator_height = 2
     corner_radius = 10
     transparency = 100
     offset = 0x10 
 
     frame_width = 2
     frame_color = "#4D80E4"
-    separator_color = "frame"
+    separator_color = "#4D80E4"
 
     font = JetBrains Mono Nerd Font
-    format = "<b><span color='#4D80E4'>%s</span></b>\n%b"
+    format = "<b><span color='#ffffff'>%s</span></b>\n%b"
     line_height = 0
     markup = full
     ignore_newline = no

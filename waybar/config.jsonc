@@ -1,77 +1,71 @@
 {
-    "include": "~/.config/waybar/modules",
-    "layer": "top",
-    "exclusive": true,
-    "passthrough": false,
-    "position": "top",
-    "fixed-center": true,
-    "ipc": true,
+  "include": "~/.config/waybar/modules",
+  "layer": "top",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "fixed-center": true,
+  "ipc": true,
 
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/separator#line",
+    "custom/separator#blank_2",
+    "hyprland/window"
+  ],
 
-    "modules-left": [
-        "hyprland/workspaces",
-        "custom/separator#line",
-        "custom/separator#blank_2",
-        "hyprland/window"
-    ],
+  "modules-center": ["clock#forest"],
 
-    "modules-center": [
-        "clock#forest"
-    ],
+  "modules-right": [
+    "network",
+    "custom/separator#blank_2",
+    "group/audio",
+    "custom/separator#blank_2",
+    "battery#forest",
+    "custom/separator#blank_2",
+    "custom/power",
+    "custom/separator#blank_1"
+  ],
 
-    "modules-right": [
-        "network",
-        "custom/separator#blank_2",
-        "group/audio",
-        "custom/separator#blank_2",
-        "battery#forest",
-        "custom/separator#blank_2",
-        "custom/power",
-        "custom/separator#blank_1"
-    ],
+  "custom/arch": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "rofi -show drun"
+  },
 
-    "custom/arch": {
-        "format": " ",
-        "tooltip": false,
-        "on-click": "rofi -show drun"
+  "clock#forest": {
+    "format": "{:%d.%m.%Y - %H:%M}",
+    "tooltip-format": "<span color='#D3C6AA' size='larger'>{:%Y %B}</span>\n<tt>{calendar}</tt>",
+    "calendar-weeks-pos": "right",
+    "today-format": "<span color='#E67E80' weight='ultrabold'>{}</span>",
+    "format-calendar": "<span color='#D3C6AA' weight='normal'>{}</span>",
+    "format-calendar-weeks": "<span color='#7FBBB3'><b>W{:%V}</b></span>",
+    "format-calendar-weekdays": "<span color='#A7C080'><b>{}</b></span>",
+    "on-scroll": { "calendar": 1 }
+  },
+
+  "battery#forest": {
+    "align": 0,
+    "rotate": 0,
+    "full-at": 100,
+    "design-capacity": false,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
     },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": "󱘖 {capacity}%",
+    "format-alt-click": "click",
+    "format-full": "{icon} {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
 
-    "clock#forest": {
-        "format": "{:%d.%m.%Y - %H:%M}",
-        "tooltip-format": "<span color='#D3C6AA' size='larger'>{:%Y %B}</span>\n<tt>{calendar}</tt>",
-        "calendar-weeks-pos": "right",
-        "today-format": "<span color='#E67E80' weight='ultrabold'>{}</span>",
-        "format-calendar": "<span color='#D3C6AA' weight='normal'>{}</span>",
-        "format-calendar-weeks": "<span color='#7FBBB3'><b>W{:%V}</b></span>",
-        "format-calendar-weekdays": "<span color='#A7C080'><b>{}</b></span>",
-        "on-scroll": { "calendar": 1 }
-    },
-
-    "battery#forest": {
-        "align": 0,
-        "rotate": 0,
-        "full-at": 100,
-        "design-capacity": false,
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": "󱘖 {capacity}%",
-        "format-alt-click": "click",
-        "format-full": "{icon} {capacity}%",
-        "format-alt": "{icon} {time}",
-		 "format-icons": [
-			"󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
-		], 
-
-        "format-time": "{H}h {M}min",
-        "tooltip": false,
-        "tooltip-format": "{timeTo} {power}w",
-        "on-click-middle": "~/.config/hypr/scripts/ChangeBlur.sh",
-        "on-click-right": "~/.config/hypr/scripts/Wlogout.sh"
-    }
-
+    "format-time": "{H}h {M}min",
+    "tooltip": false,
+    "tooltip-format": "{timeTo} {power}w",
+    "on-click-middle": "~/.config/hypr/scripts/ChangeBlur.sh",
+    "on-click-right": "~/.config/hypr/scripts/Wlogout.sh"
+  }
 }
