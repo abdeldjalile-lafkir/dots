@@ -1,24 +1,3 @@
-hyprland & 
-hyprlock & 
-hypridle &
-waybar &
-swappy &
-yay &
-grim &
-slurp &
-neofetch &
-dunst &
-android-tools &
-wofi &
-rofi &
-clipman &
-wl-clipboard &
-cmatrix &
-firefox &
-
-
-#########################################################################################################################33333
-
 jalil-lafkir@192.168.420.69 /home/jalil-lafkir  % yay -Qe
 android-tools 35.0.2-11
 base 3-2

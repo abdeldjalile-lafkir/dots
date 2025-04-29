@@ -33,3 +33,7 @@ mimeapps.list
 user-dirs.dirs
 user-dirs.locale
 xdg-terminals.list
+VirtualBox/
+karboncalligraphyrc
+kritadisplayrc
+QtProject.conf

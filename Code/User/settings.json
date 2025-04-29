@@ -72,5 +72,17 @@
   "hediet.vscode-drawio.resizeImages": null,
   "tabnine.experimentalAutoImports": true,
   "explorer.confirmDragAndDrop": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "editor.largeFileOptimizations": false,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
 }

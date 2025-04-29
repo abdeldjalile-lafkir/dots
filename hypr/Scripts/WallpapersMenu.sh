@@ -24,7 +24,7 @@ if [ -n "$SELECTED_WALLPAPER" ]; then
 
     echo "\$CURRENT_BG =$WALLPAPER_CURRENT" >> "$HYPRPAPER_CONF"
     echo "preload = $WALLPAPER_CURRENT" >> "$HYPRPAPER_CONF"
-    echo "wallpaper = eDP-1,$WALLPAPER_CURRENT" >> "$HYPRPAPER_CONF"
+    echo "wallpaper = ,$WALLPAPER_CURRENT" >> "$HYPRPAPER_CONF"
     echo "splash = false" >> "$HYPRPAPER_CONF"
     echo "ipc = true" >> "$HYPRPAPER_CONF"
     

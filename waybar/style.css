@@ -1,147 +1,144 @@
-
 /* Simple Style */
 
 * {
-    font-family: "JetBrains Mono Nerd Font";
-    font-weight: bold;
-    min-height: 0;
-    font-size: 100%;
-    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-  }
-  
-  window#waybar {
-    font-size: 15px;
-    padding-bottom: 5px;
-    background: #1d2021;
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    border-bottom: 2px solid #4d80e4 ;
-  }
-  
-  #taskbar button,
-  #workspaces button {
-    color: #ffffff;
-    border: none;
-    border-radius: 0;
-  }
-  
-  button:hover {
-    box-shadow: inherit;
-    text-shadow: inherit;
-    background: inherit;
-  }
-  
-  #taskbar button.active,
-  #workspaces button.active {
-    color: #4d80e4;
-  }
-  
-  #battery .battery-icon  {
-    font-size: 28px;
-  }
-  
-  #submap {
-    border-bottom: 1px solid red;
-  }
-  
+  font-family: "JetBrains Mono Nerd Font";
+  font-weight: bold;
+  min-height: 0;
+  font-size: 100%;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
 
-  #battery,
-  #bluetooth,
-  #clock,
-  #mode,
-  #mpris,
-  #network,
-  #power-profiles-daemon,
-  #pulseaudio,
-  #pulseaudio-slider,
-  #taskbar button,
-  #taskbar,
-  #tray,
-  #window,
-  #wireplumber,
-  #workspaces,
-  #custom-lock,
-  #custom-menu,
-  #custom-power_vertical,
-  #custom-power {
-    color: #ffffff;
-    padding: 3px 6px 3px 6px;
-  }
-  
-  #battery.warning,
-  #disk.warning,
-  #memory.warning,
-  #cpu.warning {
-    border-top: 3px solid #1d2021;
-  }
-  
-  #battery.critical,
-  #disk.critical,
-  #memory.critical,
-  #cpu.critical {
-    color: red;
-  }
-  
-  #temperature.critical {
-    background-color: #fb4934;
-  }
-  
-  #battery.charging {
-    border-top: 3px solid #1d2021;
-  }
+window#waybar {
+  font-size: 15px;
+  padding-bottom: 5px;
+  background: #1d2021;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-bottom: 2px solid #4d80e4;
+}
 
-  tooltip {
-    border: 2px solid #4d80e4;
-    border-radius: 10px;
-    
-  }
+#taskbar button,
+#workspaces button {
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+}
 
-  tooltip label {
-    font-family: "JetBrains Mono Nerd Font";
-    padding:5px 10px;
-  }
-  
-  #pulseaudio-slider slider {
-    min-width: 0px;
-    min-height: 0px;
-    opacity: 0;
-    background-image: none;
-    border: none;
-    box-shadow: none;
-  }
-  
-  #pulseaudio-slider trough {
-    min-width: 80px;
-    min-height: 5px;
-    border-radius: 5px;
-    background-color: #928374;
-  }
-  
-  #pulseaudio-slider highlight {
-    min-height: 10px;
-    border-radius: 5px;
-    background-color: #b8bb26;
-  }
-  
-  #backlight-slider slider {
-    min-width: 0px;
-    min-height: 0px;
-    opacity: 0;
-    background-image: none;
-    border: none;
-    box-shadow: none;
-  }
-  
-  #backlight-slider trough {
-    min-width: 80px;
-    min-height: 10px;
-    border-radius: 5px;
-    background-color: #928374;
-  }
-  
-  #backlight-slider highlight {
-    min-width: 10px;
-    border-radius: 5px;
-    background-color: #b8bb26;
-  }
+button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: inherit;
+}
+
+#taskbar button.active,
+#workspaces button.active {
+  color: #4d80e4;
+}
+
+#battery .battery-icon {
+  font-size: 28px;
+}
+
+#submap {
+  border-bottom: 1px solid red;
+}
+
+#battery,
+#bluetooth,
+#clock,
+#mode,
+#mpris,
+#network,
+#power-profiles-daemon,
+#pulseaudio,
+#pulseaudio-slider,
+#taskbar button,
+#taskbar,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-lock,
+#custom-menu,
+#custom-power_vertical,
+#custom-power {
+  color: #ffffff;
+  padding: 3px 6px 3px 6px;
+}
+
+#battery.warning,
+#disk.warning,
+#memory.warning,
+#cpu.warning {
+  border-top: 3px solid #1d2021;
+}
+
+#battery.critical,
+#disk.critical,
+#memory.critical,
+#cpu.critical {
+  color: red;
+}
+
+#temperature.critical {
+  background-color: #fb4934;
+}
+
+#battery.charging {
+  border-top: 3px solid #1d2021;
+}
+
+tooltip {
+  border: 2px solid #4d80e4;
+  border-radius: 10px;
+}
+
+tooltip label {
+  font-family: "JetBrains Mono Nerd Font";
+  padding: 5px 10px;
+}
+
+#pulseaudio-slider slider {
+  min-width: 0px;
+  min-height: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-width: 80px;
+  min-height: 5px;
+  border-radius: 5px;
+  background-color: #928374;
+}
+
+#pulseaudio-slider highlight {
+  min-height: 10px;
+  border-radius: 5px;
+  background-color: #b8bb26;
+}
+
+#backlight-slider slider {
+  min-width: 0px;
+  min-height: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#backlight-slider trough {
+  min-width: 80px;
+  min-height: 10px;
+  border-radius: 5px;
+  background-color: #928374;
+}
+
+#backlight-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: #b8bb26;
+}
