@@ -23,7 +23,7 @@
     "tree.inactiveIndentGuidesStroke": "#5B5B5B"
   },
   "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.vertical": "visible",
 
   "explorer.confirmDelete": false,
   "editor.stickyScroll.enabled": false,
@@ -84,5 +84,8 @@
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
-  }
+  },
+  "workbench.externalBrowser": "firefox",
+  "liveServer.settings.CustomBrowser": "firefox",
+  "workbench.activityBar.location": "hidden"
 }

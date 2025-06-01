@@ -50,5 +50,63 @@
   {
     "key": "ctrl+[Comma]",
     "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.panel.chat",
+    "when": "workbench.panel.chat.view.copilot.active"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.panel.chat",
+    "when": "workbench.panel.chat.view.copilot.active"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "workbench.action.chat.open"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.action.chat.open"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.startVoiceChat",
+    "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.stopListeningAndSubmit",
+    "when": "inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'editor' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'inline' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'quick' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'view' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'editor' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'inline' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'quick' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'view'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat2.stop",
+    "when": "inlineChatHasEditsAgent && inlineChatVisible && inlineChatHasSession == 'empty'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat.startWithCurrentLine",
+    "when": "inlineChatHasProvider && inlineChatShowingHint && !editorReadonly && !inlineChatVisible"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.terminal.chat.start",
+    "when": "terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat2.start",
+    "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && !inlineChatHasSession"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat2.reveal",
+    "when": "inlineChatHasEditsAgent && inlineChatHasSession"
   }
 ]
